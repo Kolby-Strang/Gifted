@@ -21,7 +21,6 @@ class GiftsService {
     async createGift(giftData) {
         const newGift = new Gift(giftData)
         const res = await api.post('api/gifts', newGift)
-        debugger
         AppState.gifts.unshift(new Gift(res.data))
         AppState.emit('gifts')
     }
