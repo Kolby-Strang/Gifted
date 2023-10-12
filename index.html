@@ -41,31 +41,40 @@
   <!-- SECTION -->
   <main>
 
-    <section id="auth-template">
-      <!-- TODO REMOVE THE AUTH TEMPLATE ONCE YOU VERIFY YOUR AUTH SETTINGS -->
-      <div class="container-fluid">
-        <div class="row my-3">
-          <div class="col-lg-5" id="auth-settings">
-            <div class="card p-2 skeleton-loader">
-              <div class="card-title p-2">
-                <div class="d-flex align-items-center">
-                  <div class="skeleton-loader avatar"></div>
-                  <div class="skeleton-loader text mx-2"></div>
-                </div>
-              </div>
-              <div class="card-body border-top">
-                <div class="skeleton-loader text block"></div>
-                <div class="skeleton-loader text block"></div>
-                <div class="skeleton-loader text block"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <section id="router-view">
       <!-- primary viewport -->
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-3 bg-success text-white">
+            <form onsubmit="app.GiftsController.createGift(event)">
+              <label for="tag">Tag</label>
+              <input required id="tag" name="tag" type="text" maxlength="35">
+              <label for="url">Url</label>
+              <input required id="url" name="url" type="text" maxlength="500">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+            <!-- TODO add gif maker here -->
+          </div>
+          <div class="col-9">
+            <div id="gift-container" class="row m-2">
+              <!-- GIFT PURGE -->
+
+              <!-- <div class="col-4 p-2 card bg-unopened">
+                <div class="unopened-info">
+                  <p class="fs-5">Title</p>
+                  <p class="text-secondary">Click to open</p>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
 
 
@@ -74,7 +83,7 @@
   <!-- SECTION -->
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
-      <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
+      <p class="mb-0"><small>Made by Rhys the 🧙, and Kolby the 🧑‍🎤</p>
     </div>
   </footer>
 

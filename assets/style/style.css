@@ -1,1 +1,29 @@
 /* BASIC STYLES HERE */
+input {
+    display: block;
+    width: 100%;
+}
+
+.gift-img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg-unopened {
+    background-image: url(https://images.unsplash.com/photo-1532680678473-a16f2cda8e43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 39vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(224, 224, 224);
+}
+
+.unopened-info {
+    background-color: rgba(0, 0, 0, 0.703);
+    text-align: center;
+    padding: .75em;
+}
