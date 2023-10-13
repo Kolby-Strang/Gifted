@@ -23,7 +23,7 @@ export class Gift {
             <div class="col-4 p-1">
                 <div class="p-2 card bg-unopened">
                     <div onclick="app.GiftsController.openGift('${this.id}')" role="button" class="unopened-info">
-                        <p class="fs-5">Title</p>
+                        <p class="fs-5">${this.tag}</p>
                         <p class="text-secondary">Click to open</p>
                     </div>
                 </div>
